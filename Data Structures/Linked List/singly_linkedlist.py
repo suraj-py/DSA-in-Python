@@ -41,7 +41,7 @@ class LinkedList:
             self.insert_at_end(data)
 
     def insert_at(self, data, index):
-        if index<0 and index>self.get_lenght():
+        if index<0 or index>self.get_lenght():
             raise Exception('error')
 
         elif index == 0:
@@ -60,7 +60,7 @@ class LinkedList:
                 count += 1
 
     def remove_at(self, index):
-        if index<0 and index>self.get_lenght():
+        if index<0 or index>self.get_lenght():
             raise Exception('error')
 
         elif index == 0:
