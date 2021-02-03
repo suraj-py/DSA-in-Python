@@ -39,7 +39,7 @@ class DoublyLinkedList:
 
     def insert_at(self, data, index):
         if index<0 or index>self.get_lenght():
-            raise Exception('error')
+            raise Exception('index out of range!')
 
         elif index == 0:
             self.insert_at_begining(data)
