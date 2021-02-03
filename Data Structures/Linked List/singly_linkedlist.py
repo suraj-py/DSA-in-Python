@@ -61,7 +61,7 @@ class LinkedList:
 
     def remove_at(self, index):
         if index<0 or index>self.get_lenght():
-            raise Exception('error')
+            raise Exception('index out of range!')
 
         elif index == 0:
             self.head = self.head.next
